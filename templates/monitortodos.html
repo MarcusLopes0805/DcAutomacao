@@ -1,0 +1,29 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+    <section>
+    <div>
+        <p id="pexibirtodos">
+            <a href="/monitordiretorio/" id="linkexibirtodos">Exibir apenas diretórios com arquivos</a>
+        </p>
+    </div>
+    </section>
+    <section>
+    {% for linha in todos %}
+            <tr id="tabledadosgerais">
+                <td>{{ linha.1 }}</td>
+                <td>{{ linha.2 }}</td>
+                <td>{{ linha.3 }}</td>
+                <td>{{ linha.4 }}</td>
+                <td>{{ linha.6 }}</td>
+                <td>{{ linha.7 }}</td>
+                <td><a href="{{ linha.8 }}" id="tabledadosgerais">Ajuda</a></td>
+            </tr>
+    {% endfor %}
+    </section>
+    <section>
+            <p id="plogout">
+                <a href="/logout" id="linklogout">Encerrar sessão</a>
+            </p>
+    </section>
+{% endblock %}

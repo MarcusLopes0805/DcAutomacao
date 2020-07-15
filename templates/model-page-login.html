@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include "model-head-login.html" %}
+</head>
+{% load static %}
+<body style="background-image: url({% static '/img/Sicoob.png' %});">
+    <header>
+        <hr>
+            <p id="titulo">Autenticação</p>
+        <hr>
+    </header>
+
+    {% block content %} {% endblock %}
+
+    {% include "model-footer.html" %}
+</body>
+</html>

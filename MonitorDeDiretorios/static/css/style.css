@@ -1,0 +1,102 @@
+body {
+    background-color: #003641
+}
+
+#titulo {
+    color: #7DB61C;
+    text-align: center;
+    font-family: "Asap Bold", "Tahoma Bold";
+    font-size: 22px;
+}
+
+#pexibirtodos {
+    text-align: right;
+}
+
+#plogout {
+    text-align: right;
+}
+
+#linkexibirtodos {
+    color: #00AE9D;
+}
+
+#linklogout {
+    color: #00AE9D;
+}
+
+#footer {
+    color: #7DB61C;
+    text-align: center;
+    font-family: "Asap Semibold", "Arial Bold";
+    font-size: 19px;
+}
+
+#imgfooter {
+    width: 27px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+table {
+    width: 100%;
+    padding: 1px;
+    border-spacing: 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Asap Regular", "Arial";
+}
+
+#tdgeralbranco {
+    text-align: left;
+    padding: 0px;
+    color: white;
+    height: 25px;
+}
+
+#tabledadosheader {
+    background-color: #00AE9D;
+    color: black;
+    height: 25px;
+}
+
+#tabledadoscoluna1 {
+    text-align: left;
+    padding: 5px;
+    height: 25px;
+}
+
+#tabledadosgerais {
+    background-color: #49479D;
+    color: white;
+    height: 25px;
+}
+
+#tabledadospendente {
+    background-color: #AD2D1D;
+    color: white;
+    height: 25px;
+}
+
+#tabledadosnoprazo {
+    background-color: #12409D;
+    color: white;
+    height: 25px;
+}
+
+#tablelegenda {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+}
+
+#legendapendente {
+    background-color: #AD2D1D;
+    width: 50px;
+}
+
+#legendanoprazo {
+    background-color: #12409D;
+    width: 50px;
+}

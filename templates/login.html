@@ -1,0 +1,41 @@
+{% extends "model-page-login.html" %}
+{% block content %}
+    <br>
+    <br>
+    <form action="submit" method="POST">{% csrf_token %}
+        <div align="center">
+            <table style="width:10%">
+                <tr>
+                    <td align="left">
+                        <label id="footer">Usuário: </label>
+                    </td>
+                    <td align="center">
+                        <input type="text" name="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label id="footer">Senha: </label>
+                    </td>
+                    <td align="center">
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <button type="submit">Entrar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+    {% for message in messages %}
+        <div align="center">
+            <strong>Erro: </strong>{{ message }}
+        </div>
+    {% endfor %}
+    
+    <br>
+    <br>
+{% endblock %}

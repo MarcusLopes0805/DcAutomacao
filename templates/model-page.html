@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include "model-head.html" %}
+</head>
+{% load static %}
+<body style="background-image: url({% static '/img/Sicoob.png' %});">
+    <header>
+        <hr>
+            <p id="titulo">Monitor de Diretórios</p>
+        <hr>
+    </header>
+    <table>
+        <thead>
+            <tr id="tabledadosheader">
+                <th>Diretório</th>
+                <th>Máscara</th>
+                <th>Qtd Arqs</th>
+                <th>Qtd Pendentes</th>
+                <th>Transmissão</th>
+                <th>Processamento</th>
+                <th>Obs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% block content %} {% endblock %}
+        </tbody>
+     </table>
+
+    {% include "model-footer.html" %}
+</body>
+</html>

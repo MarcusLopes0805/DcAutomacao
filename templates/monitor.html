@@ -1,0 +1,58 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+    <section>
+        <div>
+            <p id="pexibirtodos">
+                <a href="/monitorartodos/" id="linkexibirtodos">Exibir todos os diretórios monitorados</a>
+            </p>
+            <p id="plogout">
+                <a href="/logout" id="linklogout">Encerrar sessão</a>
+            </p>
+        </div>
+    </section>
+    <section>
+        {% for linha in pendentes %}
+                <tr id="tabledadospendente">
+                    <td id="coluna1">{{ linha.1 }}</td>
+                    <td>{{ linha.2 }}</td>
+                    <td>{{ linha.3 }}</td>
+                    <td>{{ linha.4 }}</td>
+                    <td>{{ linha.6 }}</td>
+                    <td>{{ linha.7 }}</td>
+                    <td>
+                        <a href="{{ linha.8 }}" target="_blank" id="tabledadospendente">Ajuda</a>
+                    </td>
+                </tr>
+        {% endfor %}
+        {% for linha in noprazo %}
+                <tr id="tabledadosnoprazo">
+                    <td id="coluna1">{{ linha.1 }}</td>
+                    <td>{{ linha.2 }}</td>
+                    <td>{{ linha.3 }}</td>
+                    <td>{{ linha.4 }}</td>
+                    <td>{{ linha.6 }}</td>
+                    <td>{{ linha.7 }}</td>
+                    <td>
+                        <a href="{{ linha.8 }}" target="_blank" id="tabledadosnoprazo">Ajuda</a>
+                    </td>
+                </tr>
+        {% endfor %}
+    </section>
+    <section>
+        <table id="tablelegenda">
+            <tr>
+                <td id="legendapendente"></td>
+                <td id="tdgeralbranco">
+                    Diretório com arquivos fora do prazo
+                </td>
+            </tr>
+            <tr>
+                <td id="legendanoprazo"></td>
+                <td id="tdgeralbranco">
+                    Diretório com arquivos pendentes, mas ainda no prazo
+                </td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}
